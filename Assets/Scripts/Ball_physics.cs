@@ -177,6 +177,8 @@ public class Ball_physics : MonoBehaviour
         res_v = Cx * res_v;
         res_w = Cw * res_w * m_isSpin;
         racket.BallTouch = Quaternion.Inverse(q) * (m * res_v - m * rb.velocity);
+        racket.Hitting_V = racket_Rb.velocity;
+        racket.Hitting_Q = racket_Rb.rotation;
         rb.velocity = res_v;
         rb.angularVelocity = res_w;
     }

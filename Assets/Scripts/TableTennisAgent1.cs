@@ -9,6 +9,7 @@ public class TableTennisAgent1 : Agent
     [Header("Specific to Tennis")]
     public GameObject myArea;
     public GameObject ball;
+    public GameObject opponent;
     //environmental settings
     public bool Opponent;
     public bool is2D = true;
@@ -16,6 +17,8 @@ public class TableTennisAgent1 : Agent
     public bool isSpinObservable = false;
     public bool isTiming = true;
     public bool isBallTouch = false;
+    public bool isMemory = false;
+    public bool isHitting_info = false;
 
     public float score;
     //正規化
@@ -26,9 +29,9 @@ public class TableTennisAgent1 : Agent
     float max_Rt = 10F;
     float max_Bw = 1*2*Mathf.PI;
 
-    Vector3 Restricted_Area = new Vector3(2, 2, 4);
-
-    public Vector3 BallTouch;
+    public Vector3 BallTouch = Vector3.zero;
+    public Vector3 Hitting_V = Vector3.zero;
+    public Quaternion Hitting_Q = Quaternion.identity;
 
     Rigidbody AgentRb;
     Rigidbody BallRb;
@@ -75,6 +78,7 @@ public class TableTennisAgent1 : Agent
         Vector3 racket_vel = Convert_x * AgentRb.velocity;
         Quaternion racket_rot = Convert_wq * transform.rotation;
         Vector3 racket_rotvel = Convert_w * AgentRb.angularVelocity;
+        /**
         if (is2D)
         {
             racket_rot.y = 0;
@@ -82,6 +86,7 @@ public class TableTennisAgent1 : Agent
             racket_rotvel.y = 0;
             racket_rotvel.z = 0;
         }
+        **/
         //ball position & velocity
         Vector3 ball_pos = BallRb.position - myArea.transform.position;
         ball_pos = Convert_x * ball_pos;
@@ -101,10 +106,7 @@ public class TableTennisAgent1 : Agent
         //velocity
         sensor.AddObservation(racket_vel);
         //quaternion
-        sensor.AddObservation(racket_rot.x);
-        sensor.AddObservation(racket_rot.y);
-        sensor.AddObservation(racket_rot.z);
-        sensor.AddObservation(racket_rot.w);
+        sensor.AddObservation(racket_rot);
         //angular velocity
         sensor.AddObservation(racket_rotvel);
         //ball
@@ -120,6 +122,13 @@ public class TableTennisAgent1 : Agent
         if (isBallTouch)
         {
             sensor.AddObservation(BallTouch);
+        }
+        if (isHitting_info)
+        {
+            sensor.AddObservation(Hitting_V);
+            sensor.AddObservation(Hitting_Q);
+            sensor.AddObservation(opponent.GetComponent<TableTennisAgent1>().Hitting_V);
+            sensor.AddObservation(opponent.GetComponent<TableTennisAgent1>().Hitting_Q);
         }
         if (isTiming)
         {
@@ -194,7 +203,12 @@ public class TableTennisAgent1 : Agent
     private void FixedUpdate()
     {
         Restrict_Area();
-        BallTouch = Vector3.zero;
+        if (!isMemory)
+        {
+            BallTouch = Vector3.zero;
+            Hitting_V = Vector3.zero;
+            Hitting_Q = Quaternion.identity;
+        }
     }
 
     public override void Heuristic(float[] actionsOut)
