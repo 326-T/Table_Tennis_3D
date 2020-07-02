@@ -6,9 +6,6 @@ ScriptsOnlyBuild:
     - Rule
     - TableTennisAgent1
     - TableTennisArea
-    Unity.Barracuda.dll:
-    - Unity.Barracuda.NNModel
-    - Unity.Barracuda.NNModelData
     Unity.ML-Agents.dll:
     - Unity.MLAgents.DecisionRequester
     - Unity.MLAgents.Policies.BehaviorParameters
@@ -19,7 +16,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/ob10_ac1_spinobservable_2D.unity:
+    Assets/Scenes/ob10_ac1_hittinginfo_2D.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -58,10 +55,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11560}
     - Class: 114
       Script: {instanceID: 12216}
-    - Class: 114
-      Script: {instanceID: 12468}
-    - Class: 114
-      Script: {instanceID: 12660}
     - Class: 114
       Script: {instanceID: 12748}
     - Class: 114
@@ -605,5 +598,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 24
   scenePathNames:
-  - Assets/Scenes/ob10_ac1_spinobservable_2D.unity
-  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/unity_volume/ob10_ac1_spinobservable_2D/Table_Tennis_3D_ob10_ac1_spinobservable_2D.x86_64
+  - Assets/Scenes/ob10_ac1_hittinginfo_2D.unity
+  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/unity_volume/ob10_ac1_hittinginfo_2D/Table_Tennis_3D_ob10_ac1_hittinginfo_2D.x86_64
