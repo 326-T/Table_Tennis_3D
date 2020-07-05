@@ -11,6 +11,7 @@ public class Rule : MonoBehaviour
     TableTennisArea area;
     TableTennisAgent1 agent_A;
     TableTennisAgent1 agent_B;
+    public int max_return = 6;
 
     // Start is called before the first frame update
     void Start()
@@ -155,7 +156,10 @@ public class Rule : MonoBehaviour
                 log.turn = 1;
                 log.hit = 0;
                 log.bound = 1;
-                agent_B.AddReward(0.5F);
+                log.num_return += 1;
+                agent_B.AddReward(0.2F);
+                if (log.num_return == max_return)
+                    AgentBWins();
             }
         }
         if (collision.gameObject.CompareTag("court_B"))
@@ -178,7 +182,10 @@ public class Rule : MonoBehaviour
                 log.turn = 2;
                 log.hit = 0;
                 log.bound = 1;
-                agent_A.AddReward(0.5F);
+                log.num_return += 1;
+                agent_A.AddReward(0.2F);
+                if (log.num_return == max_return)
+                    AgentAWins();
             }
         }
     }

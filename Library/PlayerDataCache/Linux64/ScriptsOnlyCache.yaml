@@ -6,6 +6,9 @@ ScriptsOnlyBuild:
     - Rule
     - TableTennisAgent1
     - TableTennisArea
+    Unity.Barracuda.dll:
+    - Unity.Barracuda.NNModel
+    - Unity.Barracuda.NNModelData
     Unity.ML-Agents.dll:
     - Unity.MLAgents.DecisionRequester
     - Unity.MLAgents.Policies.BehaviorParameters
@@ -16,7 +19,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/ob10_ac1_hittinginfo_2D.unity:
+    Assets/Scenes/ob10_ac1_spinobservable_2D.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -55,6 +58,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11560}
     - Class: 114
       Script: {instanceID: 12216}
+    - Class: 114
+      Script: {instanceID: 12468}
+    - Class: 114
+      Script: {instanceID: 12660}
     - Class: 114
       Script: {instanceID: 12748}
     - Class: 114
@@ -136,7 +143,7 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: a9866b2e9c4d3d5989cdf1b70c477aa8
+      Hash: 82f36b558fb9898dd0130238fcb1958f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Rule
@@ -430,7 +437,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: be01a014ffb2484e6cdfdca7c5af1eed
+      Hash: 5c43521626439785eae441f54ad0d086
     assemblyName: Unity.ML-Agents.dll
     namespaceName: Unity.MLAgents.Policies
     className: BehaviorParameters
@@ -484,7 +491,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 93aacb3b05b0355ce56165afe67494bd
+      Hash: 95099b344dbd6a09080afc2fe2a0dab4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameLog
@@ -598,5 +605,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 24
   scenePathNames:
-  - Assets/Scenes/ob10_ac1_hittinginfo_2D.unity
-  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/unity_volume/ob10_ac1_hittinginfo_2D/Table_Tennis_3D_ob10_ac1_hittinginfo_2D.x86_64
+  - Assets/Scenes/ob10_ac1_spinobservable_2D.unity
+  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/unity_volume/ob10_ac1_spinobservable_2D/ob10_ac1_spinobservable_2D.x86_64

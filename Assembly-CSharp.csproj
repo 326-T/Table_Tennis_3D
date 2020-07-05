@@ -249,22 +249,22 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/PackageCache/com.unity.barracuda@1.0.0/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/PackageCache/com.unity.barracuda@0.7.1-preview/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/PackageCache/com.unity.burst@1.2.3/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/PackageCache/com.unity.ml-agents@1.0.2/Plugins/System.IO.Abstractions.dll</HintPath>
+      <HintPath>C:/Users/Mitsuru/Research/unity/ml-agents-release_3/com.unity.ml-agents/Plugins/System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/PackageCache/com.unity.ml-agents@1.0.2/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+      <HintPath>C:/Users/Mitsuru/Research/unity/ml-agents-release_3/com.unity.ml-agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/PackageCache/com.unity.ml-agents@1.0.2/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+      <HintPath>C:/Users/Mitsuru/Research/unity/ml-agents-release_3/com.unity.ml-agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/PackageCache/com.unity.ml-agents@1.0.2/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+      <HintPath>C:/Users/Mitsuru/Research/unity/ml-agents-release_3/com.unity.ml-agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -623,20 +623,8 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Barracuda.MacBLAS">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Barracuda.MacBLAS.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Barracuda.Editor">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Barracuda.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -647,20 +635,38 @@
     <Reference Include="Unity.Timeline">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Barracuda">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Barracuda.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda.MacBLAS">
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Barracuda.MacBLAS.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda.Editor">
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Barracuda.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Barracuda">
+      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Barracuda.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda.iOSBLAS">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Barracuda.iOSBLAS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ML-Agents.CommunicatorObjects">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Barracuda.BurstBLAS">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Barracuda.BurstBLAS.dll</HintPath>
@@ -671,17 +677,11 @@
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ML-Agents.Editor">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.ML-Agents.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ML-Agents">
       <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/Unity.ML-Agents.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

@@ -194,7 +194,7 @@ public class TableTennisAgent1 : Agent
         if (collision.gameObject.CompareTag("ball"))
         {
             if (turn == 1)
-                AddReward(0.3F);
+                AddReward(0.1F);
             else
                 AddReward(-0.1F);
         }

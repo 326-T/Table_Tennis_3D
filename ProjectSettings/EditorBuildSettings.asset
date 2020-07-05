@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ob10_ac1_spinobservable_2D.unity
     guid: c0572a3b0f984634dbe8ee30195763f0
   - enabled: 0
     path: Assets/Scenes/ob10_ac1_balltouch_hittinginfo_2D.unity
     guid: 686a60d4e20fe934db6d83641bf18b06
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ob10_ac1_hittinginfo_2D.unity
     guid: 2b24cd4cee0b0294980ffa4224486965
   m_configObjects: {}
