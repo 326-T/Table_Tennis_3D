@@ -11,7 +11,7 @@ public class TableTennisAgent1 : Agent
     public GameObject ball;
     public GameObject opponent;
     //environmental settings
-    public bool Opponent;
+    public bool isOpponent;
     public bool is2D = true;
     //observation
     public bool isSpinObservable = false;
@@ -53,7 +53,7 @@ public class TableTennisAgent1 : Agent
         Convert_w = Matrix4x4.identity;
         Convert_w.m33 = 0;
         Convert_wq = Quaternion.AngleAxis(0, Vector3.up);
-        if (Opponent)
+        if (isOpponent)
         {
             Convert_x.m00 = -1;
             Convert_x.m22 = -1;
@@ -135,9 +135,9 @@ public class TableTennisAgent1 : Agent
             Rule rule = ball.GetComponent<Rule>();
             if (rule.log.hit == 0 && rule.log.bound == 1)
             {
-                if (!Opponent && rule.log.turn == 1)
+                if (!isOpponent && rule.log.turn == 1)
                     turn = 1F;
-                else if (Opponent && rule.log.turn == 2)
+                else if (isOpponent && rule.log.turn == 2)
                     turn = 1F;
                 else
                     turn = 0F;

@@ -57,19 +57,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11560}
     - Class: 114
-      Script: {instanceID: 12216}
+      Script: {instanceID: 12220}
     - Class: 114
-      Script: {instanceID: 12468}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12660}
+      Script: {instanceID: 12662}
     - Class: 114
-      Script: {instanceID: 12748}
+      Script: {instanceID: 12750}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 13076}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 13116}
     - Class: 114
-      Script: {instanceID: 13374}
+      Script: {instanceID: 13378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -299,7 +299,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 442026876796bee3314708587b220926
+      Hash: edb11bc51ebf1be5c5f9787811200bd5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TableTennisAgent1
@@ -606,4 +606,4 @@ ScriptsOnlyBuild:
   platform: 24
   scenePathNames:
   - Assets/Scenes/ob10_ac1_spinobservable_2D.unity
-  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/unity_volume/ob10_ac1_spinobservable_2D/ob10_ac1_spinobservable_2D.x86_64
+  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Build/Linux/spinobservable/ob10_ac1_spinobservable_2D.x86_64

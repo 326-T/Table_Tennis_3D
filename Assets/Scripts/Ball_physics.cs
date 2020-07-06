@@ -39,7 +39,7 @@ public class Ball_physics : MonoBehaviour
             m_isSpin = 1;
         //rb.angularVelocity = new Vector3(-100, 0, 0);
         //rb.velocity = new Vector3(0, 0, -10);
-        Time.timeScale = 0.2F;
+        //Time.timeScale = 0.2F;
     }
 
     // Update is called once per frame
