@@ -39,29 +39,29 @@ public class Rule : MonoBehaviour
     void AgentAWins()
     {
         //Debug.Log("A wins");
-        agent_A.SetReward(1);
-        agent_B.SetReward(-1);
+        agent_A.SetReward(5);
+        agent_B.SetReward(-5);
         agent_A.score += 1;
         Reset();
     }
     void AgentAMiss()
     {
         //Debug.Log("A miss");
-        agent_A.SetReward(-0.5F);
+        agent_A.SetReward(-2.5F);
         Reset();
     }
     void AgentBWins()
     {
         //Debug.Log("B wins");
-        agent_A.SetReward(-1);
-        agent_B.SetReward(1);
+        agent_A.SetReward(-5);
+        agent_B.SetReward(5);
         agent_B.score += 1;
         Reset();
     }
     void AgentBMiss()
     {
         //Debug.Log("B miss");
-        agent_B.SetReward(-0.5F);
+        agent_B.SetReward(-2.5F);
         Reset();
     }
 
@@ -157,7 +157,7 @@ public class Rule : MonoBehaviour
                 log.hit = 0;
                 log.bound = 1;
                 log.num_return += 1;
-                agent_B.AddReward(0.2F);
+                agent_B.AddReward(0.5F);
                 if (log.num_return == max_return)
                     AgentBWins();
             }
@@ -183,7 +183,7 @@ public class Rule : MonoBehaviour
                 log.hit = 0;
                 log.bound = 1;
                 log.num_return += 1;
-                agent_A.AddReward(0.2F);
+                agent_A.AddReward(0.5F);
                 if (log.num_return == max_return)
                     AgentAWins();
             }

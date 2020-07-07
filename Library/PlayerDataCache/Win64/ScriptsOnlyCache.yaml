@@ -6,9 +6,6 @@ ScriptsOnlyBuild:
     - Rule
     - TableTennisAgent1
     - TableTennisArea
-    Unity.Barracuda.dll:
-    - Unity.Barracuda.NNModel
-    - Unity.Barracuda.NNModelData
     Unity.ML-Agents.dll:
     - Unity.MLAgents.DecisionRequester
     - Unity.MLAgents.Policies.BehaviorParameters
@@ -58,10 +55,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11560}
     - Class: 114
       Script: {instanceID: 12220}
-    - Class: 114
-      Script: {instanceID: 12472}
-    - Class: 114
-      Script: {instanceID: 12662}
     - Class: 114
       Script: {instanceID: 12750}
     - Class: 114

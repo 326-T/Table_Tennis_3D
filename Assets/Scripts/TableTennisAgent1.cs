@@ -145,6 +145,7 @@ public class TableTennisAgent1 : Agent
             else
                 turn = 0F;
             sensor.AddObservation(turn);
+            sensor.AddObservation(rule.log.num_return / rule.max_return);
         }
     }
 
@@ -194,7 +195,7 @@ public class TableTennisAgent1 : Agent
         if (collision.gameObject.CompareTag("ball"))
         {
             if (turn == 1)
-                AddReward(0.1F);
+                AddReward(0.3F);
             else
                 AddReward(-0.1F);
         }
