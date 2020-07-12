@@ -599,4 +599,4 @@ ScriptsOnlyBuild:
   platform: 24
   scenePathNames:
   - Assets/Scenes/ob10_ac1_spinobservable_2D.unity
-  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Build/Linux/spinobservable/ob10_ac1_spinobservable_2D.x86_64
+  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Build/Linux/spinobservable_opponent/ob10_ac1_spinobservable_2D.x86_64
