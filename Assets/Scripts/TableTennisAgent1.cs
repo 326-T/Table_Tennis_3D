@@ -34,6 +34,7 @@ public class TableTennisAgent1 : Agent
     public Quaternion Hitting_Q = Quaternion.identity;
 
     Rigidbody AgentRb;
+    Rigidbody OpponentRb;
     Rigidbody BallRb;
 
     Matrix4x4 Convert_x;
@@ -47,6 +48,7 @@ public class TableTennisAgent1 : Agent
     public override void Initialize()
     {
         AgentRb = GetComponent<Rigidbody>();
+        OpponentRb = opponent.GetComponent<Rigidbody>();
         BallRb = ball.GetComponent<Rigidbody>();
         Convert_x = Matrix4x4.identity;
         Convert_x.m33 = 0;
@@ -78,6 +80,11 @@ public class TableTennisAgent1 : Agent
         Vector3 racket_vel = Convert_x * AgentRb.velocity;
         Quaternion racket_rot = Convert_wq * transform.rotation;
         Vector3 racket_rotvel = Convert_w * AgentRb.angularVelocity;
+        Vector3 opponent_pos = AgentRb.position - myArea.transform.position;
+        racket_pos = Convert_x * racket_pos;
+        Vector3 opponent_vel = Convert_x * AgentRb.velocity;
+        Quaternion opponent_rot = Convert_wq * transform.rotation;
+        Vector3 opponent_rotvel = Convert_w * AgentRb.angularVelocity;
         /**
         if (is2D)
         {
@@ -109,6 +116,15 @@ public class TableTennisAgent1 : Agent
         sensor.AddObservation(racket_rot);
         //angular velocity
         sensor.AddObservation(racket_rotvel);
+        //opponent racket 
+        //position
+        sensor.AddObservation(opponent_pos);
+        //velocity
+        sensor.AddObservation(opponent_vel);
+        //quaternion
+        sensor.AddObservation(opponent_rot);
+        //angular velocity
+        sensor.AddObservation(opponent_rotvel);
         //ball
         //position
         sensor.AddObservation(ball_pos);
@@ -139,6 +155,10 @@ public class TableTennisAgent1 : Agent
                     turn = 1F;
                 else if (isOpponent && rule.log.turn == 2)
                     turn = 1F;
+                else if (!isOpponent && rule.log.turn == 1)
+                    turn = -1F;
+                else if (isOpponent && rule.log.turn == 1)
+                    turn = -1F;
                 else
                     turn = 0F;
             }
