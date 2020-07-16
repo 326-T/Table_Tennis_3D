@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ob10_ac1_spinobservable_2D.unity
     guid: c0572a3b0f984634dbe8ee30195763f0
   - enabled: 0
@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ob10_ac1_hittinginfo_2D.unity
     guid: 2b24cd4cee0b0294980ffa4224486965
+  - enabled: 0
+    path: Assets/Scenes/spinobservable_vs_balltouch_2D.unity
+    guid: 798ef4d5c708c6749b487b7a961af5b4
+  - enabled: 1
+    path: Assets/Scenes/spinobservable_vs_noballtouch_2D.unity
+    guid: e94545c584707cc4381a4455ac24b48b
   m_configObjects: {}

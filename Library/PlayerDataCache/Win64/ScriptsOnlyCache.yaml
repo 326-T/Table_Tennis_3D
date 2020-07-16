@@ -6,6 +6,9 @@ ScriptsOnlyBuild:
     - Rule
     - TableTennisAgent1
     - TableTennisArea
+    Unity.Barracuda.dll:
+    - Unity.Barracuda.NNModel
+    - Unity.Barracuda.NNModelData
     Unity.ML-Agents.dll:
     - Unity.MLAgents.DecisionRequester
     - Unity.MLAgents.Policies.BehaviorParameters
@@ -16,7 +19,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/ob10_ac1_spinobservable_2D.unity:
+    Assets/Scenes/spinobservable_vs_noballtouch_2D.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -55,6 +58,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11560}
     - Class: 114
       Script: {instanceID: 12220}
+    - Class: 114
+      Script: {instanceID: 12472}
+    - Class: 114
+      Script: {instanceID: 12662}
     - Class: 114
       Script: {instanceID: 12750}
     - Class: 114
@@ -598,5 +605,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 19
   scenePathNames:
-  - Assets/Scenes/ob10_ac1_spinobservable_2D.unity
-  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Build/Windows/spinobservable_opponent/Table_Tennis_3D.exe
+  - Assets/Scenes/spinobservable_vs_noballtouch_2D.unity
+  playerPath: C:/Users/Mitsuru/Research/unity/Table_Tennis_3D/Build/Windows/spinobservable_vs_noballtouch/Table_Tennis_3D.exe
